@@ -5,7 +5,7 @@ public class Result {
     private String message;
     private int pagesTotal;
     private int currentPage;
-    private Object object;
+    private Object data;
 
     public int getCode() {
         return code;
@@ -39,12 +39,12 @@ public class Result {
         this.currentPage = currentPage;
     }
 
-    public Object getObject() {
-        return object;
+    public Object getData() {
+        return data;
     }
 
-    public void setObject(Object object) {
-        this.object = object;
+    public void setData(Object data) {
+        this.data = data;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class Result {
                 ", message='" + message + '\'' +
                 ", pagesTotal=" + pagesTotal +
                 ", currentPage=" + currentPage +
-                ", object=" + object +
+                ", data=" + data +
                 '}';
     }
 }

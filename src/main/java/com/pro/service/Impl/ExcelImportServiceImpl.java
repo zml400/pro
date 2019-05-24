@@ -136,7 +136,7 @@ public class ExcelImportServiceImpl implements ExcelImportService {
             result.setMessage("请求成功");
             result.setCode(0);
             result.setPagesTotal(1);
-            result.setObject(list);
+            result.setData(list);
             return result;
         }else {
             //页数
@@ -150,7 +150,7 @@ public class ExcelImportServiceImpl implements ExcelImportService {
                 result.setCurrentPage(pageNum);
                 result.setPagesTotal(pagestotal);
                 int fromIndex = (pageNum - 1) * pageSize;
-                result.setObject(list.subList(fromIndex, fromIndex + pageSize));
+                result.setData(list.subList(fromIndex, fromIndex + pageSize));
             }
         }
         return result;
