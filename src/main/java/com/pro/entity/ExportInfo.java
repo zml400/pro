@@ -1,6 +1,7 @@
 package com.pro.entity;
 
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.alibaba.excel.metadata.BaseRowModel;
 
 import java.io.Serializable;
 
@@ -15,25 +16,31 @@ public class ExportInfo implements Serializable {
     public String getApplyPerson() {
         return applyPerson;
     }
+
     public void setApplyPerson(String applyPerson) {
         this.applyPerson = applyPerson;
     }
+
     public int getOvertimeMonth() {
         return overtimeMonth;
     }
+
     public void setOvertimeMonth(int overtimeMonth) {
         this.overtimeMonth = overtimeMonth;
     }
+
     public double getOvertimeDays() {
         return overtimeDays;
     }
+
     public void setOvertimeDays(double overtimeDays) {
         this.overtimeDays = overtimeDays;
     }
+
     @Override
     public String toString() {
         return "ExportInfo{" +
-                ", applyPerson='" + applyPerson + '\'' +
+                "applyPerson='" + applyPerson + '\'' +
                 ", overtimeMonth=" + overtimeMonth +
                 ", overtimeDays=" + overtimeDays +
                 '}';
